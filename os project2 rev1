@@ -8,7 +8,7 @@ void *teacher();
 void *student1();
 void *student2();
 void *student3();
-pthread_mutex_t lck;
+pthread_mutex_t lck;  //mutex lock is used for synchronization mechanism
 int ch1,ch2;
 int r1,r2;
 
@@ -18,7 +18,7 @@ int main()
 	pthread_mutex_init(&lck,NULL);
 	
 	student[1][1]=1;
-	student[2][2]=2;student[3][3]=1;
+	student[2][2]=2;student[3][3]=1; // 3 students were initialized 
 	pthread_t t_thread;
 	pthread_t s_thread;
 	printf("Resources Menu: \n\t\tPress '1' for pen\n\t\tPress '2' for paper \n\t\tPress '3' for question_paper \n"); 

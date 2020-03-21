@@ -3,9 +3,9 @@ int main()
 {
 	int i, type[20],n;
 	int resptime[20];
-	printf("Number of process: ");
+	printf("Total Number of processes: ");
 	scanf("%d",&n);
-	printf("Enter the data\n");
+	printf("Enter the data of the processes\n");
 	for(i=0;i<n;i++)
 	{
 		printf("Response time of P%d (in milliseconds): ",i);

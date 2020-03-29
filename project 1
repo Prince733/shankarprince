@@ -3,10 +3,10 @@ int main()
 {
 	int i, type[20],n;
 	int resptime[20];
-	printf("Total Number of processes: ");
+	printf("Total Number of processes: ");  //no of processes to be entered
 	scanf("%d",&n);
-	printf("Enter the data of the processes\n");
-	for(i=0;i<n;i++)
+	printf("Enter the data of the processes\n"); //Data of the process to be entered
+	for(i=0;i<n;i++) //for loop for total no of process to be taken for input
 	{
 		printf("Response time of P%d (in milliseconds): ",i);
 		scanf("%d",&resptime[i]);
